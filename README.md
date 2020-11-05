@@ -1,5 +1,5 @@
 # WebARTest
 WebARTest
 
-テスト↓
+テスト→
 https://yuto-michishita.github.io/WebARTest/
