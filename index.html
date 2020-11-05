@@ -1,12 +1,5 @@
-<!-- Import the component -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
-<!-- Use it like any other HTML element -->
-<model-viewer 
-	style="width:800px;height:1000px;"
-	src="cube.glb" 
-	alt="A 3D model of an astronaut"
-	auto-rotate camera-controls>
-	
+<model-viewer ar camera-controls ios-src="assets/Astronaut.usdz" src="cube" alt="A 3D model of an astronaut">
+  <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+      👋 Activate AR
+  </button>
 </model-viewer>
