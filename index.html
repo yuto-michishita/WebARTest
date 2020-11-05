@@ -3,7 +3,16 @@
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 <!-- Use it like any other HTML element -->
-<model-viewer src="cube.glb" 
-alt="A 3D model of an astronaut" 
-auto-rotate camera-controls>
+<model-viewer 
+	src="cube.glb" 
+	alt="A 3D model of an astronaut" 
+	auto-rotate camera-controls>
+
+  <button 
+	slot="hotspot-foot" 
+	data-position="0.16 0.1 0.17" 
+	data-normal="-0.07 0.97 0.23" 
+	data-visibility-attribute="visible">
+	</button>
+  <div id="annotation">This annotation is fixed in screen-space</div>
 </model-viewer>
