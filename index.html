@@ -53,6 +53,24 @@
   </button>
        <a href="#" onClick="window.open('about:blank','_self').close();"">閉じる</a>
  -->
+<p id="Terminal"></p>
+
+<script type="text/javascript">
+var ta = document.getElementById('Terminal')
+var msg = ""
+var ut = navigator.userAgent;
+
+if(ut.indexOf('iPhone') > 0 || ut.indexOf('iPod') > 0 || ut.indexOf('Android') > 0 && ut.indexOf('Mobile') > 0){
+"SmartPhon";
+}else if(ut.indexOf('iPad') > 0 || ut.indexOf('Android') > 0){
+"Tablet";
+}else{
+"Personal Computer";
+}
+
+ta.textContent = msg
+</script>
+
     </model-viewer>
   </body>
 </html>
