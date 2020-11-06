@@ -13,7 +13,7 @@
     
   <style>
   #annotation{
-    background-color: #888888;
+    background-color: #d3d3d3;
     position: absolute;
     transform: translate(10px, 10px);
     border-radius: 10px;
@@ -54,22 +54,5 @@
        <a href="#" onClick="window.open('about:blank','_self').close();"">閉じる</a>
  -->
    </model-viewer>
-<p id="Terminal"></p>
-
-<script type="text/javascript">
-var ta = document.getElementById('Terminal')
-var msg = ""
-var ut = navigator.userAgent;
-
-if(ut.indexOf('iPhone') > 0 || ut.indexOf('iPod') > 0 || ut.indexOf('Android') > 0 && ut.indexOf('Mobile') > 0){
-"SmartPhon";
-}else if(ut.indexOf('iPad') > 0 || ut.indexOf('Android') > 0){
-"Tablet";
-}else{
-"Personal Computer";
-}
-
-ta.textContent = msg
-</script>
   </body>
 </html>
